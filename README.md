@@ -1,32 +1,41 @@
-# Loxon-Hackathon
-## Customer Payment Behavior Segmentation & Fraud Detection
+# Project Name
 
----
+🏆 **Winner of the Loxon Hackathon**
 
-## Key Files
+This application was built and awarded during the Loxon Hackathon. It focuses on robust data management while delivering a highly engaging and personalized user experience. 
 
-### `/src/` - Python Scripts
+## ✨ Features
 
-**AI Pipeline (Run in Order):**
-1. `prepare_data.py` - Loads CSVs, merges customers/orders/payments, creates feature dataset
-2. `feature_engineering.py` - Calculates 17 payment behavior features (delays, amounts, frequency, recency)
-3. `customer_segmentation.py` - K-means clustering into 4 behavioral segments (VIP, Standard, Problem, Low-Value)
-4. `predictive_modeling.py` - Trains Random Forest classifier (92.86% accuracy), exports model + feature importance
-5. `anomaly_fraud_detection.py` - Ensemble detection (3 algorithms: Isolation Forest, SVM, Elliptic Envelope) finds 7 anomalous customers + 11 fraudulent transactions
-6. `dashboard.py` - Interactive Streamlit dashboard with 4 views: segmentation, fraud detection, combined analysis, segment predictor
+* **Customizable Dashboard:** The dashboard features dynamic color schemes that automatically adjust depending on the anime chosen by the user.
+* **Advanced Data Handling:** Efficient processing, routing, and visualization of complex datasets.
+* **Optimized Performance:** Fast execution and seamless UI transitions.
 
-**SQL Presentation Tools:**
-- `sql_results_visualizer.py` - Generates 5 interactive HTML charts from SQL query CSVs (segment distribution, quartiles, customer comparison, delays, executive summary)
-- `sql_table_formatter.py` - Creates 6 styled HTML tables with CSS formatting for PowerPoint screenshots
-- `create_sql_vs_ai_comparison.py` - Generates transition slide comparing SQL (278 customers, descriptive) vs AI (66 customers, predictive) capabilities
+## 🚀 Quick Start
 
-**Data Generation:**
-- `generate_mock_data.py` - Creates synthetic customer/order/payment data for testing
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/Teoooooooooooo/Hackaton-Loxon.git](https://github.com/Teoooooooooooo/Hackaton-Loxon.git)
+cd Hackaton-Loxon
+```
 
-### `/sql/` - Oracle Database Scripts
-- `profiling.sql` - Data exploration queries to understand patterns and quality issues
-- `cleansing.sql` - Creates clean DW tables with quality flags, normalizes data
-- `01_create_consistency_log_table.sql` - Creates validation table with 31 data quality flags
-- `02_validate_and_populate_log.sql` - Validates data, logs 1,228 issues
-- `03_query_consistency_log.sql` - 9 analytical queries for data quality insights
-- `04_customer_payment_behavior_queries.sql` - Created 7 kpis: behavior segments, revenue quartiles, top/risky customers
+### 2. Install Dependencies
+```bash
+# Example for a Node.js project. Update according to your environment.
+npm install
+```
+
+### 3. Run the Application
+```bash
+# Example command to start the local development server
+npm start
+```
+
+## 🛠️ Tech Stack
+
+* **Frontend:** [Insert Framework, e.g., React, HTML/CSS/JS]
+* **Backend:** [Insert Backend Tech, e.g., Node.js, Python, Java]
+* **Database:** [Insert Database, e.g., Oracle SQL, PostgreSQL]
+
+## 🤝 Team & Contributions
+
+* **Teo** - *Developer*
