@@ -36,6 +36,4 @@ npm start
 * **Backend:** [Insert Backend Tech, e.g., Node.js, Python, Java]
 * **Database:** [Insert Database, e.g., Oracle SQL, PostgreSQL]
 
-## 🤝 Team & Contributions
 
-* **Teo** - *Developer*
